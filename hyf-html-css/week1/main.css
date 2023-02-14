@@ -1,0 +1,88 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+*,body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: #c5c2b8;
+}
+
+.left, .certifications, .education, .experience{
+    background-color: #ffffff;
+    padding: 3rem;
+    line-height: 2;
+}
+
+ul{
+    list-style: none;
+}
+
+main{
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: 35% 1fr;
+    grid-gap:3rem;
+    filter: drop-shadow(0 0 0.4rem rgb(134, 132, 132));
+}
+
+.img img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    filter: drop-shadow(0 0 0.4rem rgb(134, 132, 132));
+    border-radius: 10px;
+}
+
+.img h1{
+    color: #FFBF00;
+    font-size: 3.9vw;
+    text-align: center;
+    margin-bottom: 0;
+    
+   
+}
+.img h2{
+    color: #FFBF00;
+    font-size: 2vw;
+    text-align: center;
+    line-height-step: 0;
+}
+
+.occupation{
+    text-align: center;
+}
+
+.info, .skills, .languages{
+    padding: 1rem;
+    line-height: 1.5;
+    
+}
+
+.experience ul, .education ul, .certifications ul{
+    margin: 0.5rem 0;
+}
+
+.info ul,.skills ul{
+    margin: 2rem 0;
+}
+
+.footer{
+    background-color: #FFBF00;
+    padding: 1rem 0;
+    margin: 2rem;
+    text-align: center;
+    line-height: 1.5;
+}
+.footer i{
+    color: black;
+}
+
+i{
+    color: #54516c;
+}
