@@ -10,7 +10,7 @@
 }
 
 body{
-    background-color:#EFE7BC
+    background-color:#f0eee4
 }
 
 .left, .education {
@@ -29,11 +29,8 @@ ul{
 }
 
 main{
-    margin: 1rem;
-    padding: 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap:0.1rem;
     filter: drop-shadow(0 0 0.4rem #E7F2F8);
 }
 .skills {
@@ -72,7 +69,7 @@ img{
 .text{
     font-size: 3.1vw;
     color: 
-    #FFA384;
+    #ec7852;
     letter-spacing: 5px;
 }
 
@@ -81,16 +78,25 @@ h1 {
 }
 
 li {
-    color:#74BDCB;
+    color:#428e9d;
 }
 .occupation{
     font-size: 2.1vw;
-    color:#74BDCB;
+    color:#428e9d;
 }
 
-.info, .languages{
-    padding: 0.2rem;
+.info, .languages {
+    padding: 0rem;
     line-height: 2; 
+}
+
+.certifications {
+    margin-top: 2rem;
+}
+
+.education >li,
+.experience >li {
+    padding: 2rem;
 }
 
 .footer{
