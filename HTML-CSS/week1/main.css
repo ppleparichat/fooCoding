@@ -1,20 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700;900&display=swap');
 
-  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
 *,body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px; 
 }
 
 body{
-    background-color: #c5c2b8;
+    background-color:#EFE7BC
 }
 
-.left, .certifications, .education, .experience{
-    background-color: #ffffff;
+.left, .education {
     padding: 3rem;
+    line-height: 2;
+}
+
+.experience{
+    padding: 3rem;
+    margin-top: 0px;
     line-height: 2;
 }
 
@@ -23,66 +29,104 @@ ul{
 }
 
 main{
-    margin: 2rem;
+    margin: 1rem;
+    padding: 0;
     display: grid;
-    grid-template-columns: 35% 1fr;
-    grid-gap:3rem;
-    filter: drop-shadow(0 0 0.4rem rgb(134, 132, 132));
+    grid-template-columns: 1fr 1fr;
+    grid-gap:0.1rem;
+    filter: drop-shadow(0 0 0.4rem #E7F2F8);
+}
+.skills {
+    margin: 1rem;
+    text-align: center;
 }
 
-.img img{
+
+header {
+    margin: 1rem;
+    display: grid;
+    grid-template-columns:1fr ;
+    align-items: center;
+}
+
+.pointer {cursor: pointer;}
+
+img{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
-    filter: drop-shadow(0 0 0.4rem rgb(134, 132, 132));
-    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 1rem;
+    width: 25%;
 }
 
-.img h1{
-    color: #FFBF00;
-    font-size: 3.9vw;
-    text-align: center;
-    margin-bottom: 0;
-    
-   
-}
-.img h2{
-    color: #FFBF00;
-    font-size: 2vw;
-    text-align: center;
-    line-height-step: 0;
+.left{
+    text-align: end;
 }
 
+.occupation ,.text{
+    text-align: center;
+  
+}
+
+.text{
+    font-size: 3.1vw;
+    color: 
+    #FFA384;
+    letter-spacing: 5px;
+}
+
+h1 {
+    color: #358393;
+}
+
+li {
+    color:#74BDCB;
+}
 .occupation{
-    text-align: center;
+    font-size: 2.1vw;
+    color:#74BDCB;
 }
 
-.info, .skills, .languages{
-    padding: 1rem;
-    line-height: 1.5;
-    
-}
-
-.experience ul, .education ul, .certifications ul{
-    margin: 0.5rem 0;
-}
-
-.info ul,.skills ul{
-    margin: 2rem 0;
+.info, .languages{
+    padding: 0.2rem;
+    line-height: 2; 
 }
 
 .footer{
-    background-color: #FFBF00;
+    background-color: #e2d37b;
     padding: 1rem 0;
     margin: 2rem;
     text-align: center;
     line-height: 1.5;
 }
-.footer i{
-    color: black;
+
+p, .footer i{
+    color: #358393;
+}
+
+.skills{
+    color: #358393;
+    font-size: 2vw;
 }
 
 i{
-    color: #54516c;
+    color: #FFA384;
 }
+
+hr {
+    border: 2px dashed #e2d37b
+}
+
+.skills li{
+    color: #FFf;
+    background-color: #FFA384;
+    background-size: 10%;
+    padding: 1rem ;
+    margin: 2rem;
+    font-size: 2.1vw;
+    border-radius: 3px;
+    display: inline;
+    margin-inline: 10px;
+}
+
