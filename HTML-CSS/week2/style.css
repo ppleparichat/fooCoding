@@ -84,7 +84,7 @@ img {
     box-shadow: 10px 10px gainsboro;
 }
 
-@media (min-width: 390px) {
+@media (min-width: 290px) {
     ul {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -109,7 +109,7 @@ img {
     }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1280px) {
     ul {
         grid-template-columns: repeat(4, 1fr);
     }
