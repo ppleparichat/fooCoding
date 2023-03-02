@@ -8,3 +8,5 @@
 * https://ppleparichat.github.io/fooCoding/HTML-CSS/week1
 
 * https://ppleparichat.github.io/fooCoding/HTML-CSS/week2
+
+* https://ppleparichat.github.io/fooCoding/HTML-CSS/week3
