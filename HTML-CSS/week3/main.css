@@ -7,6 +7,10 @@
     list-style-type: none;                                         
 }
 
+body {
+    font-size: calc(60% + 0.5vmin);
+}
+
 a {
     text-decoration: none;
 }
@@ -76,6 +80,7 @@ nav {
     width: 100%;
     position: sticky;
     top: 0px;
+
 }
 
 nav a, nav {
