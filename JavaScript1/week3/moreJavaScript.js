@@ -45,9 +45,6 @@ function vehicle(color, code, age) {
 }
 vehicle("blue", 1, 5) // 'a blue used car'
 
-// 7. 
-let vehicles = ["motorbike", "caravan", "bike", "car"];
-
 // 8. 
 console.log(vehicles[2]) // bike
 
@@ -59,10 +56,26 @@ function vehicleTwo(color, code, age) {
 };
 vehicleTwo("green", 3, 1);
 
+// 7. 
+let vehicles = ["motorbike", "caravan", "bike", "car"];
 // 10. 
-let advertisement = `Amazing Joe's Garage, we service`
+let advertisement = `Amazing Joe's Garage, we service `
+
+for (let i = 0; i < vehicles.length; i++) {
+    advertisement = advertisement + vehicles[i];
+    if (i === vehicles.length - 2) {
+      advertisement = `${advertisement}s, and `
+    } else if (i !== vehicles.length - 1) {
+        advertisement = `${advertisement}s, `
+    } else if (i === vehicles.length - 1) {
+        advertisement = `${advertisement}s.`
+    }
+  }
+  console.log(advertisement);
 
 // 11. 
+vehicles.push("bus")
+console.log(vehicles)
 
 // 12. 
 let person = {}
@@ -97,7 +110,11 @@ if (x == y && x === y && z == y && z == x) {
 let o1 = { foo: "bar" };
 let o2 = { foo: "bar" };
 let o3 = o2;
+console.log(o1 == o2) //false
+console.log(o2 == o3) //true
+console.log(o3 == o1) //false
 
 // 17. 
 let bar = 42;
 typeof typeof bar;
+//typeof typeof bar return string, typeof bar return "number" 
