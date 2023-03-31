@@ -20,7 +20,7 @@ const myBooksDetails = {
     author: "Sim Kern",
   },
   sir_callie_and_the_champions_of_heston: {
-    title: "Sir Callie and the Champions of Helston",
+    title: "Champions of Helston",
     language: "English",
     author: "Esme Symes-Smith",
   },

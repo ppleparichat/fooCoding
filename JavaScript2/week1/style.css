@@ -9,16 +9,34 @@
 
 body{
     display: block;
-    margin: 5rem auto;
+    margin: 3rem auto;
+    justify-content: center;
+    text-align: center;
 }
 
 ul {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
 }
 
 li {
-    margin: 3rem 2rem;
-    list-style-type: none
+    list-style-type: none;
+    padding: 3rem 0;
+    margin: 0 2rem;
+    border-bottom: dashed gray 1px;
+    font-size: 1.2rem;
+    display: block;
 }
 
+img {
+    width: 250px;
+    margin-top: 2rem;
+}
+
+@media screen and (min-width: 767px) {
+    body {
+        font-size: 2rem;
+    }
+}
