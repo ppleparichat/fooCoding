@@ -88,23 +88,31 @@ headBody.appendChild(title);
 const listContainer = document.body;
 const list = document.createElement("ul");
 
-function createListsId() {
+function createMyBooks() {
   for (const key in myBooksDetails) {
     if (myBooksDetails.hasOwnProperty(key)) {
       const listItem = document.createElement("li");
       const img = document.createElement("img");
+      const title = document.createElement("h3")
+      const language = document.createElement("h4")
+      const author = document.createElement("h4")
+      
+      title.innerHTML = myBooksDetails[key].title
+      language.innerHTML = myBooksDetails[key].language
+      author.innerHTML = myBooksDetails[key].author
 
-      listItem.innerHTML = `Title: ${myBooksDetails[key].title} <br> 
-      Language: ${myBooksDetails[key].language} <br> 
-      Author: ${myBooksDetails[key].author} <br>`;
-
+      listItem.appendChild(title)
+      listItem.appendChild(language)
+      listItem.appendChild(author)
+      
       img.src = coverBooks[key];
       listItem.appendChild(img);
 
       list.appendChild(listItem);
+      listContainer.appendChild(list)
     }
   }
-  return listContainer.appendChild(list);
+  return listContainer;
 }
 
-createListsId();
+createMyBooks();
