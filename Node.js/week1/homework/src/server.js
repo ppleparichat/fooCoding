@@ -14,11 +14,6 @@ function createServer(port) {
       response.writeHead(200, { 'Content-Type': 'application/json' });
       response.end(JSON.stringify({ state: state }));
     }
-    else if (request.method === 'GET' && request.url === '/reset') {
-      state = 10;
-      response.writeHead(200, { 'Content-Type': 'application/json' });
-      response.end(JSON.stringify({ state: state }));
-    }
     else if (request.method === 'GET' && request.url === '/add') {
       state++;
       response.writeHead(200, { 'Content-Type': 'application/json' });
@@ -26,6 +21,11 @@ function createServer(port) {
     }
     else if (request.method === 'GET' && request.url === '/subtract') {
       state--;
+      response.writeHead(200, { 'Content-Type': 'application/json' });
+      response.end(JSON.stringify({ state: state }));
+    }
+    else if (request.method === 'GET' && request.url === '/reset') {
+      state = 10;
       response.writeHead(200, { 'Content-Type': 'application/json' });
       response.end(JSON.stringify({ state: state }));
     }
