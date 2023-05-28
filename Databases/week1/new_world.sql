@@ -22,6 +22,12 @@ ORDER BY SurfaceArea DESC;
 SELECT Name FROM new_world.city
 WHERE CountryCode = "NLD";
 
+--  Fixed
+SELECT city.name FROM city
+INNER JOIN country ON city.countrycode = country.code
+WHERE country.name = 'Netherlands';
+
+
 -- 7.What is the population of Rotterdam ?
 SELECT Name, Population FROM new_world.city
 WHERE city.name = "Rotterdam";
